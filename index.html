@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تفتكري ده ايه؟</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="hearts-container">
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+    </div>
+
+    <button class="music-toggle" id="musicToggle">
+        <span class="music-icon">🎵</span>
+    </button>
+
+    <audio id="bgMusic" loop>
+
+    </audio>
+
+    <section class="gift-section" id="giftSection">
+        <div class="gift-container" id="giftContainer">
+            <!-- Gift Box -->
+            <div class="gift-box" id="giftBox">
+                <div class="gift-lid">
+                    <div class="gift-ribbon"></div>
+                    <div class="gift-bow">
+                        <div class="bow-left"></div>
+                        <div class="bow-right"></div>
+                        <div class="bow-center"></div>
+                    </div>
+                </div>
+                <div class="gift-base"></div>
+                <div class="gift-shadow"></div>
+            </div>
+
+            
+            <p class="click-hint" id="clickHint">Click to open ✨</p>
+        </div>
+
+        
+        <div class="message-container" id="messageContainer">
+            <div class="message-card">
+                <p class="message-text" id="messageText"></p>
+                <button class="next-button" id="nextButton">Next ✨</button>
+            </div>
+        </div>
+
+        
+        <div class="birthday-title" id="birthdayTitle">
+            <h1 class="birthday-text">HAPPY BIRTHDAY</h1>
+            <h2 class="birthday-name" id="birthdayName">IEEE SIGHT&ECE's Most important girl</h2>
+            <button class="letters-button" id="lettersButton">Enter Your Letters 💌</button>
+        </div>
+
+        
+        <div class="confetti-container" id="confettiContainer"></div>
+    </section>
+
+    
+    <section class="letters-section" id="lettersSection">
+        <div class="letters-container">
+            <h2 class="letters-heading">Your Letters</h2>
+            <p class="letters-subtitle">Choose when you need them most</p>
+            
+            <div class="letters-grid">
+                
+                <div class="letter-card" data-letter="sad">
+                    <div class="letter-icon">💙</div>
+                    <h3 class="letter-title">Open when<br>you feel sad</h3>
+                    <div class="letter-decoration"></div>
+                </div>
+
+                
+                <div class="letter-card" data-letter="doubt">
+                    <div class="letter-icon">✨</div>
+                    <h3 class="letter-title">Open when<br>you doubt yourself</h3>
+                    <div class="letter-decoration"></div>
+                </div>
+
+                
+                <div class="letter-card" data-letter="miss">
+                    <div class="letter-icon">😏</div>
+                    <h3 class="letter-title">Open when<br>you Block me</h3>
+                    <div class="letter-decoration"></div>
+                </div>
+
+                
+                <div class="letter-card" data-letter="sleep">
+                    <div class="letter-icon">🌙</div>
+                    <h3 class="letter-title">Open when<br>you can't sleep</h3>
+                    <div class="letter-decoration"></div>
+                </div>
+
+                
+                <div class="letter-card" data-letter="motivation">
+                    <div class="letter-icon">🌟</div>
+                    <h3 class="letter-title">Open when<br>you need motivation</h3>
+                    <div class="letter-decoration"></div>
+                </div>
+
+                <div class="letter-card" data-letter="dontknow">
+                    <div class="letter-icon">😛</div>
+                    <h3 class="letter-title">Open when<br>you need استفزاز</h3>
+                    <div class="letter-decoration"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Letter Modal -->
+    <div class="modal" id="letterModal">
+        <div class="modal-overlay" id="modalOverlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">×</button>
+            <div class="modal-body">
+                <h3 class="modal-title" id="modalTitle"></h3>
+                <p class="modal-message" id="modalMessage"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
